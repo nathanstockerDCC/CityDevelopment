@@ -101,20 +101,20 @@
           }
         });
 
-        view.ui.empty("top-left");
-        view.ui.add(titleDiv, "top-left");
+//        view.ui.empty("top-left");
+        view.ui.add(titleDiv, "top-right");
         view.ui.add(
           new Home({
             view: view
           }),
           "top-left"
         );
-         view.ui.add(
+ /*        view.ui.add(
           new Legend({
             view: view
           }),
           "bottom-left"
-        ); 
+        ); */
         view.ui.add(
           new Fullscreen({
             view: view,
@@ -122,7 +122,8 @@
           }),
           "top-right"
         );
-
+        
+        
         // When the layerview is available, setup hovering interactivity
         view.whenLayerView(layer).then(setupHoverTooltip);
 
