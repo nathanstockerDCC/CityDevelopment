@@ -109,18 +109,18 @@
           }),
           "top-left"
         );
- /*        view.ui.add(
+         view.ui.add(
           new Legend({
             view: view
           }),
-          "bottom-left"
-        ); */
+          "bottom-right"
+        ); 
         view.ui.add(
           new Fullscreen({
             view: view,
             element: applicationDiv
           }),
-          "top-right"
+          "top-left"
         );
         
         
@@ -184,7 +184,8 @@
                 type: "color",
                 field: "CNSTRCT_YR",
                 legendOptions: {
-                  title: "Built:"
+                  title: "Built:",
+                  style:"padding-right:1px"
                 },
                 stops: [
                   {
@@ -193,13 +194,13 @@
                     label: "in " + Math.floor(year)
                   },
                   {
-                    value: year - 10,
+                    value: year - 20,
                     color: "#f0f",
-                    label: "in " + (Math.floor(year) - 20)
+                    label: "in " + (Math.floor(year) - 10)
                   },
                   {
                     value: year - 50,
-                    color: "#404",
+                    color: "#626",
                     label: "before " + (Math.floor(year) - 50)
                   }
                 ]
